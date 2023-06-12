@@ -26,21 +26,208 @@ public class dlgCuentasBancarias extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        btnSexo = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtDomicilio = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtFNac = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        RadioFem = new javax.swing.JRadioButton();
+        RadioMasc = new javax.swing.JRadioButton();
+        jPanel4 = new javax.swing.JPanel();
+        txtNSaldo = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        btnDepositar = new javax.swing.JButton();
+        btnRetirar = new javax.swing.JButton();
+        txtCantidad = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txtNomBanco = new javax.swing.JTextField();
+        txtSaldo = new javax.swing.JTextField();
+        txtFAper = new javax.swing.JTextField();
+        txtPRendimiento = new javax.swing.JTextField();
+        btnGuardar = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
+        btnMostrar = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        txtnumCuenta = new javax.swing.JTextField();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos del Cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
+        jPanel1.setLayout(null);
+
+        jLabel1.setText("Nombre");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(29, 28, 50, 16);
+
+        jLabel2.setText("Domicilio");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(30, 60, 60, 16);
+
+        jLabel3.setText("Fecha de Nac.");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(30, 90, 80, 16);
+
+        txtDomicilio.setEnabled(false);
+        jPanel1.add(txtDomicilio);
+        txtDomicilio.setBounds(90, 60, 150, 22);
+
+        txtNombre.setEnabled(false);
+        jPanel1.add(txtNombre);
+        txtNombre.setBounds(90, 30, 180, 22);
+
+        txtFNac.setEnabled(false);
+        jPanel1.add(txtFNac);
+        txtFNac.setBounds(120, 90, 90, 22);
+
+        jLabel11.setText("Sexo");
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(390, 30, 43, 16);
+
+        btnSexo.add(RadioFem);
+        RadioFem.setText("Femenino");
+        RadioFem.setEnabled(false);
+        RadioFem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RadioFemActionPerformed(evt);
+            }
+        });
+        jPanel1.add(RadioFem);
+        RadioFem.setBounds(370, 60, 76, 21);
+
+        btnSexo.add(RadioMasc);
+        RadioMasc.setText("Maculino");
+        RadioMasc.setEnabled(false);
+        jPanel1.add(RadioMasc);
+        RadioMasc.setBounds(370, 90, 73, 21);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(10, 80, 500, 130);
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "--::Movimientos::--", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
+        jPanel4.setLayout(null);
+
+        txtNSaldo.setEnabled(false);
+        jPanel4.add(txtNSaldo);
+        txtNSaldo.setBounds(110, 80, 90, 22);
+
+        jLabel9.setText("Cantidad");
+        jPanel4.add(jLabel9);
+        jLabel9.setBounds(28, 39, 60, 16);
+
+        jLabel10.setText("Nuevo Saldo");
+        jPanel4.add(jLabel10);
+        jLabel10.setBounds(30, 80, 67, 16);
+
+        btnDepositar.setText("Depositar");
+        btnDepositar.setEnabled(false);
+        btnDepositar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDepositarActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnDepositar);
+        btnDepositar.setBounds(272, 40, 80, 60);
+
+        btnRetirar.setText("Retirar");
+        btnRetirar.setEnabled(false);
+        jPanel4.add(btnRetirar);
+        btnRetirar.setBounds(372, 40, 80, 60);
+
+        txtCantidad.setEnabled(false);
+        jPanel4.add(txtCantidad);
+        txtCantidad.setBounds(90, 40, 90, 22);
+
+        getContentPane().add(jPanel4);
+        jPanel4.setBounds(110, 380, 500, 140);
+
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setLayout(null);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Nombre del Banco");
+        jPanel2.add(jLabel5);
+        jLabel5.setBounds(28, 20, 110, 16);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Fecha de Apertura");
+        jPanel2.add(jLabel6);
+        jLabel6.setBounds(30, 50, 102, 16);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Porcentaje de Rendimiento");
+        jPanel2.add(jLabel7);
+        jLabel7.setBounds(30, 80, 152, 20);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Saldo");
+        jPanel2.add(jLabel8);
+        jLabel8.setBounds(30, 110, 30, 16);
+
+        txtNomBanco.setEnabled(false);
+        jPanel2.add(txtNomBanco);
+        txtNomBanco.setBounds(160, 20, 180, 22);
+
+        txtSaldo.setEnabled(false);
+        jPanel2.add(txtSaldo);
+        txtSaldo.setBounds(90, 110, 90, 22);
+
+        txtFAper.setEnabled(false);
+        jPanel2.add(txtFAper);
+        txtFAper.setBounds(160, 50, 90, 22);
+
+        txtPRendimiento.setEnabled(false);
+        jPanel2.add(txtPRendimiento);
+        txtPRendimiento.setBounds(200, 80, 90, 22);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(10, 220, 500, 150);
+
+        btnGuardar.setText("Guardar");
+        btnGuardar.setEnabled(false);
+        getContentPane().add(btnGuardar);
+        btnGuardar.setBounds(550, 190, 72, 40);
+
+        btnNuevo.setText("Nuevo");
+        getContentPane().add(btnNuevo);
+        btnNuevo.setBounds(550, 130, 72, 40);
+
+        btnMostrar.setText("Mostrar");
+        btnMostrar.setEnabled(false);
+        getContentPane().add(btnMostrar);
+        btnMostrar.setBounds(550, 250, 72, 40);
+
+        jLabel4.setText("Num. Cuenta");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(30, 50, 90, 16);
+
+        txtnumCuenta.setEnabled(false);
+        getContentPane().add(txtnumCuenta);
+        txtnumCuenta.setBounds(110, 50, 90, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnDepositarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDepositarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDepositarActionPerformed
+
+    private void RadioFemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioFemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RadioFemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +265,37 @@ public class dlgCuentasBancarias extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JRadioButton RadioFem;
+    public javax.swing.JRadioButton RadioMasc;
+    public javax.swing.JButton btnDepositar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnMostrar;
+    public javax.swing.JButton btnNuevo;
+    public javax.swing.JButton btnRetirar;
+    private javax.swing.ButtonGroup btnSexo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
+    public javax.swing.JTextField txtCantidad;
+    public javax.swing.JTextField txtDomicilio;
+    public javax.swing.JTextField txtFAper;
+    public javax.swing.JTextField txtFNac;
+    public javax.swing.JTextField txtNSaldo;
+    public javax.swing.JTextField txtNomBanco;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtPRendimiento;
+    public javax.swing.JTextField txtSaldo;
+    public javax.swing.JTextField txtnumCuenta;
     // End of variables declaration//GEN-END:variables
 }
